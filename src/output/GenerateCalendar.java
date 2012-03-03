@@ -31,9 +31,7 @@ public class GenerateCalendar extends Output{
 
 			//find number of months in xml file
 			int numMonths = 12;
-			eventList.get(0).myStart.get(Calendar.MONTH);
-
-
+			
 			for(int i=0;i<numMonths;i++)
 			{
 				//should filter into the first month of dates

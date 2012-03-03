@@ -16,7 +16,7 @@ public class Main
     public static void main (String[] args)
     {
         //get list of events
-        InputParser input =      InputParser.ParserFactory.generate("DukeBasketBall.xml");
+        InputParser input =  InputParser.ParserFactory.generate("DukeBasketBall.xml");
         InputParser inputC = InputParser.ParserFactory.generate("NFL.xml");
         InputParser inputB = InputParser.ParserFactory.generate("GoogleCalSample.xml");
         InputParser inputD = InputParser.ParserFactory.generate("tv.xml");
@@ -52,7 +52,7 @@ public class Main
         GregorianCalendar end = new GregorianCalendar(eYear, eMonth, eDate);
 
         GenerateCalendar o = new GenerateCalendar(eventList);
-//        o.dayWeekMonth(start, end);
+        //o.dayWeekMonth(start, end);
         //o.sortedList();
         //o.conflictList();
         o.generate(start,end);
